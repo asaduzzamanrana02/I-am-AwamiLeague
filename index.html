@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>আমিই আওয়ামী লীগ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>বাংলাদেশ আওয়ামী লীগ</h1>
+            <p>মুক্তাগাছা উপজেলা আওয়ামী লীগ</p>
+        </header>
+
+        <main>
+            <!-- Upload Section -->
+            <section class="upload-section">
+                <label for="imageUpload" class="custom-file-upload">
+                    <span>📁 ছবি আপলোড করুণ</span>
+                </label>
+                <input type="file" id="imageUpload" accept="image/*" />
+                <div id="loadingIndicator" class="hidden">Uploading...</div>
+            </section>
+
+            <!-- Frame Selection Section -->
+            <section class="frame-gallery">
+                <h3>আমিই আওয়ামী লীগ</h3>
+                <div class="frames-container" id="framesList"> 
+                    <!-- Frames will be injected here via JavaScript -->
+                </div>
+            </section>
+
+            <!-- Preview/Canvas Section -->
+            <section class="preview-section">
+                <div class="canvas-wrapper">
+                    <canvas id="photoCanvas"></canvas>
+                </div>
+                <div class="canvas-controls">
+                    <p class="hint">🖱️ <b>Tip:</b> Drag to move, Scroll to zoom</p>
+                    <div class="zoom-slider-container">
+                        <label for="zoomSlider">Zoom:</label>
+                        <input type="range" id="zoomSlider" min="0.1" max="5" step="0.01" value="1" />
+                    </div>
+                </div>
+            </section>
+
+            <!-- Action Section -->
+            <section class="actions">
+                <button id="downloadBtn" class="btn btn-primary">ডাউনলোড করুণ </button>
+                <p id="errorMessage" class="error hidden"></p>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Photo Frame Editor. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
