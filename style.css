@@ -131,7 +131,7 @@ input[type="file"] {
 .canvas-wrapper {
     width: 100%;
     max-width: 500px;        /* width limit */
-    height: 300px;           /* fixed height */
+    height: 400px;           /* fixed height */
     margin: 0 auto;
     background-color: white;
     border-radius: var(--border-radius);
