@@ -130,7 +130,7 @@ input[type="file"] {
 
 .canvas-wrapper {
     width: 100%;
-    max-width: 500px;        /* width limit */
+    max-width: 400px;        /* width limit */
     height: 400px;           /* fixed height */
     margin: 0 auto;
     background-color: white;
